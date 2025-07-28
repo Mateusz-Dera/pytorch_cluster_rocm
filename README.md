@@ -14,10 +14,10 @@ Original README: https://github.com/Mateusz-Dera/pytorch_cluster_rocm/ORIGINAL_R
 |CPU|AMD Ryzen 9950X3D|
 |GPU|AMD Radeon 7900XTX|
 |RAM|64GB DDR5 6600MHz|
-|Motherboard|ASRock B650E PG Riptide WiFi (BIOS 3.25)|
+|Motherboard|ASRock B650E PG Riptide WiFi (BIOS 3.30)|
 |OS|Ubuntu 24.04.2 LTS|
-|Kernel|6.11.0-29-generic|
-|ROCm|6.4.1|
+|Kernel|6.14.0-24-generic|
+|ROCm|6.4.2|
 
 ## Instalation:
 ```bash
