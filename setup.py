@@ -12,7 +12,7 @@ from torch.utils.cpp_extension import (CUDA_HOME, BuildExtension, CppExtension,
                                        CUDAExtension)
 
 __version__ = '1.6.3'
-URL = 'https://github.com/rusty1s/pytorch_cluster'
+URL = 'https://github.com/Mateusz-Dera/pytorch_cluster_rocm'
 
 WITH_CUDA = False
 if torch.cuda.is_available():
