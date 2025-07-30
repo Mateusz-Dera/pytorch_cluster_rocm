@@ -24,5 +24,6 @@ Original README: https://github.com/Mateusz-Dera/pytorch_cluster_rocm/ORIGINAL_R
 git clone https://github.com/Mateusz-Dera/pytorch_cluster_rocm
 cd pytorch_cluster_rocm
 pip install torch==2.7.1 torchvision==2.7.1 --index-url https://download.pytorch.org/whl/rocm6.3
+pip cache purge
 pip install .
 ```
