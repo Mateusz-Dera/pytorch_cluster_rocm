@@ -1,7 +1,6 @@
-
 # PyTorch Cluster ROCm
 
-[![Version](https://img.shields.io/badge/version-1.6.3-orange.svg)](https://github.com/Mateusz-Dera/pytorch_cluster_rocm)
+[![Version](https://img.shields.io/badge/Version-1.6.3-orange.svg)](https://github.com/Mateusz-Dera/pytorch_cluster_rocm)
 
 This is a fork of PyTorch Cluster adapted to work with ROCm and is used in https://github.com/Mateusz-Dera/ROCm-AI-Installer<br>
 All code was generated automatically using hipify.<br>
@@ -15,15 +14,16 @@ Original README: https://github.com/Mateusz-Dera/pytorch_cluster_rocm/ORIGINAL_R
 |GPU|AMD Radeon 7900XTX|
 |RAM|64GB DDR5 6600MHz|
 |Motherboard|ASRock B650E PG Riptide WiFi (BIOS 3.30)|
-|OS|Ubuntu 24.04.2 LTS|
-|Kernel|6.14.0-24-generic|
+|OS|Debian 13|
+|Kernel|6.14.0-27-generic|
 |ROCm|6.4.2|
 
 ## Instalation:
 ```bash
 git clone https://github.com/Mateusz-Dera/pytorch_cluster_rocm
 cd pytorch_cluster_rocm
-pip install torch==2.7.1 torchvision==2.7.1 --index-url https://download.pytorch.org/whl/rocm6.3
-pip cache purge
-pip install .
+uv venv --python 3.12
+source .venv/bin/activate
+uv pip install torch==2.8.0 torchvision==0.23.0 pytorch-triton-rocm==3.4.0 triton==3.4.0 --index-url https://download.pytorch.org/whl/rocm6.4
+uv pip install . # Ignore NVIDIA warnings
 ```
