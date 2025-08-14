@@ -24,6 +24,6 @@ git clone https://github.com/Mateusz-Dera/pytorch_cluster_rocm
 cd pytorch_cluster_rocm
 uv venv --python 3.12
 source .venv/bin/activate
-uv pip install torch==2.8.0 torchvision==0.23.0 pytorch-triton-rocm==3.4.0 triton==3.4.0 --index-url https://download.pytorch.org/whl/rocm6.4
+uv pip install torch==2.7.1 torchvision==0.22.1 pytorch-triton-rocm==3.3.1 triton==3.3.1 --index-url https://download.pytorch.org/whl/rocm6.4
 uv pip install . # Ignore NVIDIA warnings
 ```
